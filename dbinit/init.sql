@@ -2,12 +2,12 @@ create database if not exists patientsdb;
 
 use patientsdb;
 
-drop table is exists patients;
+drop table if exists patients;
 
 create table patients(
     id          bigint unsigned not null auto_increment,
-    firstname   varchar(255) default null,
-    lastname    varchar(255) default null,
+    first_name  varchar(255) default null,
+    last_name   varchar(255) default null,
     email       varchar(255) default null,
     phone       varchar(255) default null,
     address     varchar(255) default null,
